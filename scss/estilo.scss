@@ -1,0 +1,822 @@
+$primary-font: 'Roboto Condensed', sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+
+@mixin border-radius($radius: 5px) {
+    border-radius: $radius;
+}
+
+* {
+    margin: 0px;
+}
+
+.navbar {
+    height: 100px;
+    background-color: black;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+
+    &-nav {
+        margin: auto;
+    }
+}
+
+.btn {
+    color: white !important;
+    border: solid 1px white !important;
+    transition: background-color 0.3s ease;
+
+    &-outline-success {
+        --bs-btn-hover-bg: rgb(46, 46, 46) !important;
+        --bs-btn-active-bg: rgb(46, 46, 46) !important;
+    }
+}
+
+.dropdown-menu {
+    background-color: rgb(32, 32, 32);
+    --bs-dropdown-link-hover-bg: rgb(46, 46, 46) !important;
+    --bs-dropdown-link-active-bg: rgb(46, 46, 46) !important;
+}
+
+.nav-item {
+    a {
+        display: inline-block;
+        padding-inline: 20px;
+        font-family: $secondary-font;
+        font-weight: 400;
+        color: white;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+    }
+
+    &:hover a {
+        color: rgba(238, 238, 238, 0.7);
+    }
+}
+
+.nav-item-gral {
+    ul {
+        margin: auto;
+
+        li {
+            display: inline-block;
+            padding-inline: 20px;
+            font-family: $secondary-font;
+            font-weight: 400;
+            font-size: 1.2rem;
+
+            a {
+                text-decoration: none;
+                color: white;
+                transition: color 0.3s ease;
+            }
+
+            &:hover a {
+                color: rgba(238, 238, 238, 0.7);
+            }
+        }
+    }
+}
+
+.nav-content {
+    a {
+        text-decoration: none;
+    }
+}
+
+.nav-icons {
+    a {
+        margin-top: 5px;
+
+        img {
+            width: 3.5vw;
+            transition: transform 0.3s ease;
+        }
+    }
+
+    a:hover img {
+        transform: scale(1.1);
+    }
+}
+
+.video-header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 75vh;
+    overflow: hidden;
+
+    .video-container {
+        position: relative;
+        background-color: rgb(26, 26, 26);
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .video-content {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: start;
+        z-index: 1;
+
+        .video-title {
+            h3 {
+                font-family: $primary-font;
+                font-weight: bold;
+                font-size: 3.5rem;
+                color: rgb(255, 255, 255);
+            }
+        }
+
+        .video-subtitle {
+            p {
+                font-family: $primary-font;
+                font-size: 1.8rem;
+                color: rgb(255, 255, 255);
+                width: 80%;
+            }
+        }
+    }
+
+}
+
+.footer-a {
+    background-color: rgb(32, 32, 32);
+    height: 330px;
+    padding: 70px;
+    display: block;
+    text-align: center;
+
+    .footer-icons {
+        img {
+            margin-inline: 6px;
+            margin-bottom: 10px;
+            width: 1.7vw;
+            transition: transform 0.3s ease;
+        }
+
+        a:hover img {
+            transform: scale(1.2);
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .footer-content {
+        font-family: $primary-font;
+        font-weight: 300px;
+
+        a {
+            text-decoration: none;
+            color: rgb(180, 180, 180);
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        h5 {
+            margin-top: 15px;
+            font-size: 1rem;
+        }
+    }
+}
+
+.carousel-images {
+    .card {
+        a {
+            text-decoration: none;
+        }
+    }
+
+    img {
+        @include border-radius;
+        width: 100%;
+        padding-bottom: 0px;
+    }
+
+    justify-items: center;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+.modal {
+    .modal-dialog {
+        max-width: 80vw;
+
+        .modal-content {
+            background-color: rgb(26, 26, 26);
+            height: 30vw;
+        }
+    }
+}
+
+
+.main-bg {
+    background-color: rgb(26, 26, 26);
+    padding: 120px 0;
+
+    .main-titles {
+        font-family: $secondary-font;
+        font-weight: 600px;
+        font-size: 2rem;
+        color: white;
+        margin-left: 35px;
+        margin-bottom: 20px;
+    }
+}
+
+.movie-name {
+    font-family: $primary-font;
+    font-weight: 300px;
+    color: white;
+    padding: 6px;
+    font-size: 1.1rem;
+}
+
+.movie-sub,
+.series-sub {
+    display: flex;
+    @include border-radius(10%);
+    padding-inline: 5px;
+    background-color: rgb(32, 32, 32);
+    margin: auto;
+}
+
+.card {
+    --bs-card-bg: rgb(32, 32, 32);
+    margin: 5px;
+    transition: all 0.4s;
+
+    .card-body {
+        padding: 0px !important;
+    }
+}
+
+.card:hover {
+    scale: (1.1);
+}
+
+.series-name {
+    font-family: $primary-font;
+    font-weight: 300px;
+    color: white;
+    padding: 6px;
+    font-size: 1.1rem;
+}
+
+.section-series {
+    margin-top: 50px;
+}
+
+.acceso-general {
+    background-image: url('../images/login-bg.jpg');
+    background-position: bottom;
+    background-size: cover;
+    padding: 300px;
+    display: flex;
+    justify-content: center;
+
+    .acceso {
+        background-color: rgb(26, 26, 26);
+        width: 300px;
+        height: 350px;
+        margin-top: 60px;
+        box-shadow: 7px 13px 37px black;
+        padding: 20px 30px;
+        font-family: 'Bebas Neue', cursive;
+
+        h2 {
+            margin: 0;
+            text-align: center;
+            height: 40px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid;
+            font-size: 30px;
+        }
+    }
+
+    .controls {
+        width: 70%;
+        border: 2px solid #5e025e;
+        margin-bottom: 15px;
+        padding: 7px 5px;
+    }
+
+}
+
+
+
+.login-bg {
+    background-image: url('../images/login-bg.jpg');
+    background-position: bottom;
+    background-size: cover;
+    padding: 300px;
+
+    .login-form {
+        background-color: rgb(26, 26, 26);
+
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        margin: auto;
+        width: 90%;
+        max-width: 600px;
+        height: auto;
+        overflow: hidden;
+        transition: all 0.3s ease;
+
+        .login-title {
+            font-family: $primary-font;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: rgb(180, 180, 180);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-log {
+            width: 100%;
+            max-width: 600px;
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            input {
+                width: 100%;
+                height: 50px;
+                margin: 10px 0;
+                padding: 10px;
+                border: 1px solid #ccc;
+
+                transition: all 0.3s ease;
+
+                &:focus {
+                    outline: none;
+                    border-color: #200065;
+                }
+            }
+        }
+    }
+}
+
+.priv-content {
+    background-color: rgb(236, 236, 236);
+    padding: 150px;
+
+    .priv-title {
+        font-family: $primary-font;
+        font-weight: bold;
+        color: rgb(26, 26, 26);
+        font-size: 2.8rem;
+        padding-bottom: 20px;
+    }
+
+    .priv-text {
+        line-height: 1.4rem;
+        font-family: $secondary-font;
+        font-size: 1.1rem;
+        padding-bottom: 25px;
+    }
+
+    .priv-subtitle {
+        font-family: $primary-font;
+        font-weight: bold;
+        color: rgb(26, 26, 26);
+        font-size: 1.4rem;
+        padding: 10px 0px;
+    }
+}
+
+.contacto-content {
+    background-color: rgb(236, 236, 236);
+    padding: 100px 230px;
+    margin: 100px;
+
+    .contacto-title {
+        font-family: $primary-font;
+        font-weight: bold;
+        color: rgb(26, 26, 26);
+        font-size: 2.8rem;
+        padding-bottom: 20px;
+    }
+
+    .contacto-subtitle {
+        font-family: $primary-font;
+        font-weight: bold;
+        color: rgb(26, 26, 26);
+        font-size: 1.3rem;
+        padding: 20px 0px;
+        text-align: center;
+    }
+
+    .contacto-text {
+        line-height: 1.4rem;
+        font-family: $secondary-font;
+        font-size: 1.1rem;
+        padding-bottom: 25px;
+        text-align: justify;
+    }
+
+    .contacto-text2 {
+        line-height: 1.4rem;
+        font-family: $secondary-font;
+        font-size: 1.1rem;
+        padding-bottom: 25px;
+    }
+
+    .contacto-text a {
+        text-decoration: none;
+    }
+
+    .contacto-msj {
+        width: 70%;
+        height: 30px;
+        padding: 5px;
+    }
+
+    .contacto-submit {
+        width: 100%;
+        height: 42px;
+        padding: 5px;
+        margin: 10px 0;
+    }
+
+    .contacto-input {
+        width: 50%;
+        margin: auto;
+    }
+
+    .contacto-info {
+        width: 30vh;
+        height: 80px;
+        @include border-radius(7%);
+        padding: 20px;
+        margin-inline: 10px;
+        display: inline-block;
+        background-color: rgb(200, 200, 200);
+
+        h5 {
+            font-family: $primary-font;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+    }
+
+    .accordion {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+.terminos-content {
+    background-color: rgb(236, 236, 236);
+    padding: 200px 300px;
+
+    .terminos-title {
+        font-family: $primary-font;
+        font-weight: bold;
+        color: rgb(26, 26, 26);
+        font-size: 2.8rem;
+        padding-bottom: 20px;
+    }
+
+    .terminos-text {
+        line-height: 1.4rem;
+        font-family: $secondary-font;
+        font-size: 1.1rem;
+        padding-bottom: 25px;
+    }
+
+    .terminos-subtitle {
+        font-family: $primary-font;
+        font-weight: bold;
+        color: rgb(26, 26, 26);
+        font-size: 1.4rem;
+        padding: 10px 0px;
+    }
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: white;
+}
+
+// SECTION MOVIES
+.movie-gral {
+    padding: 300px 70px;
+    box-shadow: 150px 400px 300px rgba(0, 0, 0, 0.696) inset;
+    background-size: cover;
+
+    .movie-info {
+        margin-bottom: 100px;
+
+        .movie-title {
+
+            h2 {
+                font-family: 'Bebas Neue';
+                font-size: 3.2rem;
+                color: white;
+            }
+
+        }
+
+        .movie-description {
+            width: 40%;
+            color: white;
+            font-size: 1.1rem;
+            font-family: $secondary-font;
+            font-weight: bold;
+
+
+        }
+
+        .movie-genre {
+            span {
+                color: #cfd1d2;
+                font-size: 1.2rem;
+                font-family: $secondary-font;
+                font-weight: bold;
+            }
+        }
+
+        a {
+            text-decoration: none;
+
+            .media-icon {
+                margin: 10px 10px 0px 0px;
+                transition: 0.3s;
+
+                &:hover {
+                    scale: 1.2;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 930px) {
+    .carousel-images {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .nav-icons {
+        display: none;
+    }
+
+    .navbar {
+        height: 70px;
+    }
+
+    .navbar-collapse {
+        background-color: black;
+        padding: 5px;
+        @include border-radius(3%);
+    }
+
+    .main-bg .main-titles {
+        margin-left: 15px;
+        font-size: 1.5rem;
+    }
+
+    .main-bg {
+        padding: 60px 0px;
+    }
+
+    .navbar-toggler {
+        display: flex;
+    }
+
+    .nav-item-gral {
+        display: none;
+    }
+
+    .search-form {
+        display: none;
+    }
+
+    .offcanvas {
+        --bs-offcanvas-bg: rgb(26, 26, 26);
+    }
+
+    .offcanvas-title {
+        color: white;
+    }
+
+    .card {
+        width: 30vw !important;
+    }
+
+    .footer-a .footer-icons a img {
+        width: 4vw;
+    }
+
+    .video-header {
+        max-height: 70vh;
+
+        .video-content .video-title h3 {
+            padding-top: 40px;
+            font-size: 2rem;
+        }
+
+        .video-content .video-subtitle p {
+            font-size: 1.2rem;
+            width: 100%;
+        }
+    }
+
+    .login-bg {
+        padding: 120px;
+    }
+
+    .login-form {
+        width: 100%;
+        height: 70vh;
+        margin: 20px auto;
+        padding: 20px;
+
+        .login-title {
+            font-size: 1.2rem;
+        }
+
+        .form-log {
+            width: 90%;
+            padding: 10px;
+
+            input {
+                padding: 5px;
+                margin: 10px;
+                width: 100%;
+            }
+        }
+    }
+
+    // SECTION PRIVACIDAD
+
+    .priv-content {
+        padding: 100px 40px;
+
+        .priv-title {
+            font-size: 1.8rem;
+        }
+
+        .priv-text {
+            font-size: 1rem;
+        }
+
+    }
+
+
+    // SECTION CONTACTO
+
+    .contacto-content {
+        padding: 90px 40px;
+        margin: 0px;
+
+        .contacto-title {
+            font-size: 1.8rem;
+        }
+
+        .contacto-input {
+            width: 100%;
+
+            .form-floating {
+                overflow: hidden;
+            }
+        }
+
+        .contacto-subtitle {
+            font-size: 1.2rem;
+        }
+
+        .contacto-text {
+            line-height: 1.2rem;
+            font-size: 1.1rem;
+            text-align: start;
+        }
+
+        .accordion {
+            width: 100%;
+        }
+    }
+
+    // SECTION TÉRMINOS
+    .terminos-content {
+        padding: 90px 40px;
+        margin: 0px;
+
+        .terminos-title {
+            font-size: 1.8rem;
+        }
+    }
+
+    // SECTION PELICULAS
+    .movie-gral {
+        padding: 200px 30px;
+        background-size: cover;
+        background-position: 30%;
+    }
+}
+
+
+
+
+
+@media (max-width: 656px) {
+    .blu-icon img {
+        margin-top: 5px;
+        width: 60px;
+    }
+
+    .carousel-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        width: 40vw !important;
+    }
+
+    .footer-a .footer-icons a img {
+        width: 8vw;
+    }
+
+    .video-header {
+        max-height: 34vh;
+
+        .video-content .video-title h3 {
+            padding-top: 60px;
+            font-size: 1.4rem;
+        }
+
+        .video-content .video-subtitle p {
+            font-size: 0.8rem;
+        }
+    }
+
+    .login-bg {
+        padding: 120px 20px;
+    }
+
+
+    // SECTION PELICULAS
+    .movie-gral {
+        padding: 80px 20px;
+        background-position: 60%;
+
+        .movie-info {
+            text-align: center;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            background-color: rgba(0, 0, 0, 0.793);
+            border-radius: 2%;
+            padding: 15px;
+
+            .movie-title {
+
+                h2 {
+                    font-size: 2rem;
+                }
+
+            }
+
+            .movie-description {
+                width: 100%;
+                font-size: 1rem;
+            }
+
+            .movie-genre {
+                span {
+                    font-size: 1rem;
+                }
+            }
+
+        }
+    }
+}

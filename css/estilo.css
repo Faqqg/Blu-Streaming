@@ -1,0 +1,647 @@
+* {
+  margin: 0px;
+}
+
+.navbar {
+  height: 100px;
+  background-color: black;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+.navbar-nav {
+  margin: auto;
+}
+
+.btn {
+  color: white !important;
+  border: solid 1px white !important;
+  transition: background-color 0.3s ease;
+}
+.btn-outline-success {
+  --bs-btn-hover-bg: rgb(46, 46, 46) !important;
+  --bs-btn-active-bg: rgb(46, 46, 46) !important;
+}
+
+.dropdown-menu {
+  background-color: rgb(32, 32, 32);
+  --bs-dropdown-link-hover-bg: rgb(46, 46, 46) !important;
+  --bs-dropdown-link-active-bg: rgb(46, 46, 46) !important;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding-inline: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+.nav-item:hover a {
+  color: rgba(238, 238, 238, 0.7);
+}
+
+.nav-item-gral ul {
+  margin: auto;
+}
+.nav-item-gral ul li {
+  display: inline-block;
+  padding-inline: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.nav-item-gral ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+.nav-item-gral ul li:hover a {
+  color: rgba(238, 238, 238, 0.7);
+}
+
+.nav-content a {
+  text-decoration: none;
+}
+
+.nav-icons a {
+  margin-top: 5px;
+}
+.nav-icons a img {
+  width: 3.5vw;
+  transition: transform 0.3s ease;
+}
+.nav-icons a:hover img {
+  transform: scale(1.1);
+}
+
+.video-header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 75vh;
+  overflow: hidden;
+}
+.video-header .video-container {
+  position: relative;
+  background-color: rgb(26, 26, 26);
+}
+.video-header .video-container video {
+  width: 100%;
+  height: auto;
+}
+.video-header .video-content {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: start;
+  z-index: 1;
+}
+.video-header .video-content .video-title h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: rgb(255, 255, 255);
+}
+.video-header .video-content .video-subtitle p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.8rem;
+  color: rgb(255, 255, 255);
+  width: 80%;
+}
+
+.footer-a {
+  background-color: rgb(32, 32, 32);
+  height: 330px;
+  padding: 70px;
+  display: block;
+  text-align: center;
+}
+.footer-a .footer-icons img {
+  margin-inline: 6px;
+  margin-bottom: 10px;
+  width: 1.7vw;
+  transition: transform 0.3s ease;
+}
+.footer-a .footer-icons a:hover img {
+  transform: scale(1.2);
+}
+.footer-a .footer-icons a {
+  text-decoration: none;
+}
+.footer-a .footer-content {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300px;
+}
+.footer-a .footer-content a {
+  text-decoration: none;
+  color: rgb(180, 180, 180);
+  transition: color 0.3s ease;
+}
+.footer-a .footer-content a:hover {
+  color: white;
+}
+.footer-a .footer-content h5 {
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.carousel-images {
+  justify-items: center;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.carousel-images .card a {
+  text-decoration: none;
+}
+.carousel-images img {
+  border-radius: 5px;
+  width: 100%;
+  padding-bottom: 0px;
+}
+
+.modal .modal-dialog {
+  max-width: 80vw;
+}
+.modal .modal-dialog .modal-content {
+  background-color: rgb(26, 26, 26);
+  height: 30vw;
+}
+
+.main-bg {
+  background-color: rgb(26, 26, 26);
+  padding: 120px 0;
+}
+.main-bg .main-titles {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600px;
+  font-size: 2rem;
+  color: white;
+  margin-left: 35px;
+  margin-bottom: 20px;
+}
+
+.movie-name {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300px;
+  color: white;
+  padding: 6px;
+  font-size: 1.1rem;
+}
+
+.movie-sub,
+.series-sub {
+  display: flex;
+  border-radius: 10%;
+  padding-inline: 5px;
+  background-color: rgb(32, 32, 32);
+  margin: auto;
+}
+
+.card {
+  --bs-card-bg: rgb(32, 32, 32);
+  margin: 5px;
+  transition: all 0.4s;
+}
+.card .card-body {
+  padding: 0px !important;
+}
+
+.card:hover {
+  scale: 1.1;
+}
+
+.series-name {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300px;
+  color: white;
+  padding: 6px;
+  font-size: 1.1rem;
+}
+
+.section-series {
+  margin-top: 50px;
+}
+
+.acceso-general {
+  background-image: url("../images/login-bg.jpg");
+  background-position: bottom;
+  background-size: cover;
+  padding: 300px;
+  display: flex;
+  justify-content: center;
+}
+.acceso-general .acceso {
+  background-color: rgb(26, 26, 26);
+  width: 300px;
+  height: 350px;
+  margin-top: 60px;
+  box-shadow: 7px 13px 37px black;
+  padding: 20px 30px;
+  font-family: "Bebas Neue", cursive;
+}
+.acceso-general .acceso h2 {
+  margin: 0;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid;
+  font-size: 30px;
+}
+.acceso-general .controls {
+  width: 70%;
+  border: 2px solid #5e025e;
+  margin-bottom: 15px;
+  padding: 7px 5px;
+}
+
+.login-bg {
+  background-image: url("../images/login-bg.jpg");
+  background-position: bottom;
+  background-size: cover;
+  padding: 300px;
+}
+.login-bg .login-form {
+  background-color: rgb(26, 26, 26);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: auto;
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.login-bg .login-form .login-title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgb(180, 180, 180);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.login-bg .login-form .form-log {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-bg .login-form .form-log input {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+.login-bg .login-form .form-log input:focus {
+  outline: none;
+  border-color: #200065;
+}
+
+.priv-content {
+  background-color: rgb(236, 236, 236);
+  padding: 150px;
+}
+.priv-content .priv-title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  color: rgb(26, 26, 26);
+  font-size: 2.8rem;
+  padding-bottom: 20px;
+}
+.priv-content .priv-text {
+  line-height: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  padding-bottom: 25px;
+}
+.priv-content .priv-subtitle {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  color: rgb(26, 26, 26);
+  font-size: 1.4rem;
+  padding: 10px 0px;
+}
+
+.contacto-content {
+  background-color: rgb(236, 236, 236);
+  padding: 100px 230px;
+  margin: 100px;
+}
+.contacto-content .contacto-title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  color: rgb(26, 26, 26);
+  font-size: 2.8rem;
+  padding-bottom: 20px;
+}
+.contacto-content .contacto-subtitle {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  color: rgb(26, 26, 26);
+  font-size: 1.3rem;
+  padding: 20px 0px;
+  text-align: center;
+}
+.contacto-content .contacto-text {
+  line-height: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  padding-bottom: 25px;
+  text-align: justify;
+}
+.contacto-content .contacto-text2 {
+  line-height: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  padding-bottom: 25px;
+}
+.contacto-content .contacto-text a {
+  text-decoration: none;
+}
+.contacto-content .contacto-msj {
+  width: 70%;
+  height: 30px;
+  padding: 5px;
+}
+.contacto-content .contacto-submit {
+  width: 100%;
+  height: 42px;
+  padding: 5px;
+  margin: 10px 0;
+}
+.contacto-content .contacto-input {
+  width: 50%;
+  margin: auto;
+}
+.contacto-content .contacto-info {
+  width: 30vh;
+  height: 80px;
+  border-radius: 7%;
+  padding: 20px;
+  margin-inline: 10px;
+  display: inline-block;
+  background-color: rgb(200, 200, 200);
+}
+.contacto-content .contacto-info h5 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.contacto-content .accordion {
+  width: 50%;
+  margin: auto;
+}
+
+.terminos-content {
+  background-color: rgb(236, 236, 236);
+  padding: 200px 300px;
+}
+.terminos-content .terminos-title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  color: rgb(26, 26, 26);
+  font-size: 2.8rem;
+  padding-bottom: 20px;
+}
+.terminos-content .terminos-text {
+  line-height: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  padding-bottom: 25px;
+}
+.terminos-content .terminos-subtitle {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  color: rgb(26, 26, 26);
+  font-size: 1.4rem;
+  padding: 10px 0px;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: white;
+}
+
+.movie-gral {
+  padding: 300px 70px;
+  box-shadow: 150px 400px 300px rgba(0, 0, 0, 0.696) inset;
+  background-size: cover;
+}
+.movie-gral .movie-info {
+  margin-bottom: 100px;
+}
+.movie-gral .movie-info .movie-title h2 {
+  font-family: "Bebas Neue";
+  font-size: 3.2rem;
+  color: white;
+}
+.movie-gral .movie-info .movie-description {
+  width: 40%;
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.movie-gral .movie-info .movie-genre span {
+  color: #cfd1d2;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.movie-gral .movie-info a {
+  text-decoration: none;
+}
+.movie-gral .movie-info a .media-icon {
+  margin: 10px 10px 0px 0px;
+  transition: 0.3s;
+}
+.movie-gral .movie-info a .media-icon:hover {
+  scale: 1.2;
+}
+
+@media (max-width: 930px) {
+  .carousel-images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .nav-icons {
+    display: none;
+  }
+  .navbar {
+    height: 70px;
+  }
+  .navbar-collapse {
+    background-color: black;
+    padding: 5px;
+    border-radius: 3%;
+  }
+  .main-bg .main-titles {
+    margin-left: 15px;
+    font-size: 1.5rem;
+  }
+  .main-bg {
+    padding: 60px 0px;
+  }
+  .navbar-toggler {
+    display: flex;
+  }
+  .nav-item-gral {
+    display: none;
+  }
+  .search-form {
+    display: none;
+  }
+  .offcanvas {
+    --bs-offcanvas-bg: rgb(26, 26, 26);
+  }
+  .offcanvas-title {
+    color: white;
+  }
+  .card {
+    width: 30vw !important;
+  }
+  .footer-a .footer-icons a img {
+    width: 4vw;
+  }
+  .video-header {
+    max-height: 70vh;
+  }
+  .video-header .video-content .video-title h3 {
+    padding-top: 40px;
+    font-size: 2rem;
+  }
+  .video-header .video-content .video-subtitle p {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  .login-bg {
+    padding: 120px;
+  }
+  .login-form {
+    width: 100%;
+    height: 70vh;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .login-form .login-title {
+    font-size: 1.2rem;
+  }
+  .login-form .form-log {
+    width: 90%;
+    padding: 10px;
+  }
+  .login-form .form-log input {
+    padding: 5px;
+    margin: 10px;
+    width: 100%;
+  }
+  .priv-content {
+    padding: 100px 40px;
+  }
+  .priv-content .priv-title {
+    font-size: 1.8rem;
+  }
+  .priv-content .priv-text {
+    font-size: 1rem;
+  }
+  .contacto-content {
+    padding: 90px 40px;
+    margin: 0px;
+  }
+  .contacto-content .contacto-title {
+    font-size: 1.8rem;
+  }
+  .contacto-content .contacto-input {
+    width: 100%;
+  }
+  .contacto-content .contacto-input .form-floating {
+    overflow: hidden;
+  }
+  .contacto-content .contacto-subtitle {
+    font-size: 1.2rem;
+  }
+  .contacto-content .contacto-text {
+    line-height: 1.2rem;
+    font-size: 1.1rem;
+    text-align: start;
+  }
+  .contacto-content .accordion {
+    width: 100%;
+  }
+  .terminos-content {
+    padding: 90px 40px;
+    margin: 0px;
+  }
+  .terminos-content .terminos-title {
+    font-size: 1.8rem;
+  }
+  .movie-gral {
+    padding: 200px 30px;
+    background-size: cover;
+    background-position: 30%;
+  }
+}
+@media (max-width: 656px) {
+  .blu-icon img {
+    margin-top: 5px;
+    width: 60px;
+  }
+  .carousel-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    width: 40vw !important;
+  }
+  .footer-a .footer-icons a img {
+    width: 8vw;
+  }
+  .video-header {
+    max-height: 34vh;
+  }
+  .video-header .video-content .video-title h3 {
+    padding-top: 60px;
+    font-size: 1.4rem;
+  }
+  .video-header .video-content .video-subtitle p {
+    font-size: 0.8rem;
+  }
+  .login-bg {
+    padding: 120px 20px;
+  }
+  .movie-gral {
+    padding: 80px 20px;
+    background-position: 60%;
+  }
+  .movie-gral .movie-info {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.793);
+    border-radius: 2%;
+    padding: 15px;
+  }
+  .movie-gral .movie-info .movie-title h2 {
+    font-size: 2rem;
+  }
+  .movie-gral .movie-info .movie-description {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .movie-gral .movie-info .movie-genre span {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
