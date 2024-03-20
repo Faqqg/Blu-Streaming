@@ -1,5 +1,5 @@
 {
-  "name": "segunda-pre-entrega-gaitan",
+  "name": "proyecto-final-gaitan---copia",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Faqqg/Blu-Proyecto.git"
+    "url": "git+https://github.com/Faqqg/Blu-Streaming.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Faqqg/Blu-Proyecto/issues"
+    "url": "https://github.com/Faqqg/Blu-Streaming/issues"
   },
-  "homepage": "https://github.com/Faqqg/Blu-Proyecto#readme"
+  "homepage": "https://github.com/Faqqg/Blu-Streaming#readme"
 }
