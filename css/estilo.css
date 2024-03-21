@@ -610,6 +610,10 @@
   .video-header {
     max-height: 34vh;
   }
+  .video-header .video-content {
+    left: 45%;
+    width: 85%;
+  }
   .video-header .video-content .video-title h3 {
     padding-top: 60px;
     font-size: 1.4rem;
@@ -617,8 +621,11 @@
   .video-header .video-content .video-subtitle p {
     font-size: 0.8rem;
   }
+  .main-bg {
+    padding: 25px 0px;
+  }
   .login-bg {
-    padding: 120px 20px;
+    padding: 20px 20px;
   }
   .movie-gral {
     padding: 80px 20px;
